@@ -6,11 +6,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import CounterStore from './stores/CounterStore';
+import TimerStore from './stores/TimerStore';
 
 const counterStore = new CounterStore();
+const timerStore = new TimerStore();
 
 ReactDOM.render(
-  <Provider counterStore={counterStore}>
+  <Provider timerStore={timerStore}>
     <App />
   </Provider>,
   document.getElementById('root')
